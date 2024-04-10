@@ -20,7 +20,7 @@ if prompt := st.chat_input("What is up?"):
     st.session_state.messages.append({"role": "user", "content": prompt})
 
     # Configure Google Gemini API
-    genai.configure(api_key='AIzaSyDADS7dZVhmP4la18EfnzcyyY5miONkxFE')
+    genai.configure(api_key='API KEY')
     model = genai.GenerativeModel('gemini-pro')
     response = model.generate_content(prompt)
 
